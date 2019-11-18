@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
-import { Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, Image, TouchableHighlight, StyleSheet } from 'react-native';
 
 export default class TravelScreen extends Component {
   render(){
     return (
       <View style={[styles.container]}>
         <Text style={[styles.font]}>Alright, Let's Go!</Text>
+        <Image style={[styles.imageContainer]} source={require('../assets/img/walk.gif')}></Image>
+        <TouchableHighlight style={[styles.buttonContainer]}>
+          <View>
+            <Text style={[styles.font]}>⬆️ Go straight!</Text>
+          </View>
+        </TouchableHighlight>
       </View>
     )
   }
@@ -21,9 +27,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     fontWeight: "bold",
     color: "#fff",
-    paddingTop: 10,
-    paddingLeft: 10,
-    paddingRight: 10,
+    padding: 10,
     textAlign: "center"
   },
   smallFont: {
