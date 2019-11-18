@@ -27,4 +27,3 @@ We're using Cocoapods. So you would need to open the `.xcworkspace` project.
 3. Open the file `~/TheiApp/ios/TheiApp.xcworkspace`
 
 Feel free to hack around with the setup. This is how I got it loaded on my local machine.
-
