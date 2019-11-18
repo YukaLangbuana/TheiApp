@@ -7,7 +7,7 @@ export default class MapScreen extends Component {
       <View style={[styles.container]}>
         <Text style={[styles.font]}>Where are we going?</Text>
         <Text style={[styles.smallFont]}>(psst! I'm listening! 🦻)</Text>
-        <Image style={[styles.imageContainer]} source={{uri: 'https://media.wired.com/photos/59269cd37034dc5f91bec0f1/2:1/w_2500,c_limit/GoogleMapTA.jpg'}}></Image>
+        <Image style={[styles.imageContainer]} source={require('../assets/img/map.jpg')}></Image>
         <TouchableOpacity style={[styles.buttonContainer]} onPress={() => this.props.navigation.navigate('Confirm')}>
           <View>
             <Text style={[styles.font]}>OK</Text>

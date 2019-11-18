@@ -7,7 +7,7 @@ export default class ConfirmScreen extends Component {
       <View style={[styles.container]}>
         <Text style={[styles.font]}>Did you say:</Text>
         <Text style={[styles.smallFont]}>CUB Building@WSU ?</Text>
-        <Image style={[styles.imageContainer]} source={{uri: 'https://map.wsu.edu/media/download.castle?placeid=49&id=427'}}></Image>
+        <Image style={[styles.imageContainer]} source={require('../assets/img/cub.jpeg')}></Image>
         <TouchableOpacity style={[styles.buttonContainer]} onPress={() => this.props.navigation.navigate('Travel')}>
           <View>
             <Text style={[styles.font]}>YES!</Text>
