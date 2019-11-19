@@ -7,14 +7,14 @@ export default class HomeScreen extends Component {
   render(){
     return (
       <View style={[styles.container]}>
-        <TouchableOpacity style={[styles.startButtonContainer]} onPress={() => this.props.navigation.navigate('Map')}>
-          <View>
-            <Text style={[styles.font]}>START</Text>
-          </View>
-        </TouchableOpacity>
         <TouchableOpacity style={[styles.emergencyButtonContainer]}>
           <View>
             <Text style={[styles.font]}>EMERGENCY</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.startButtonContainer]} onPress={() => this.props.navigation.navigate('Map')}>
+          <View>
+            <Text style={[styles.font]}>START</Text>
           </View>
         </TouchableOpacity>
       </View>
